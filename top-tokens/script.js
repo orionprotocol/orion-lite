@@ -1,4 +1,3 @@
-const { simpleFetch } = stf;
 const { Orion } = orion;
 
 const orionInstance = new Orion();
