@@ -1,0 +1,43 @@
+html,
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+        "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+        sans-serif;
+    height: 100%;
+    display: flex;
+    width: 100%;
+    margin: 0;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+main {
+    min-width: 300px;
+    max-width: 400px;
+    margin: auto;
+}
+
+.pair {
+    display: flex;
+    justify-content: space-between;
+}
+
+.price-change--down {
+    color: red;
+}
+
+.price-change--up {
+    color: green;
+}
+
+.price-change--down::before {
+    content: "▼ ";
+}
+
+.price-change--up::before {
+    content: "▲ ";
+}
